@@ -17,7 +17,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
 RUN apt-get -y install nodejs
 RUN npm install --global yarn
 
-RUN curl -O https://raw.githubusercontent.com/libDrive/server/main/requirements.txt && \
+RUN curl -O https://raw.githubusercontent.com/Ryoo1/server/main/requirements.txt && \
     pip3 install -r requirements.txt --no-cache-dir
 
 ENV PATH="/usr/src/app/.local/bin:${PATH}"
