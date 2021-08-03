@@ -13,10 +13,10 @@ if [ "${LIBDRIVE_VERSION}" != "dev" ]; then
         VER="latest"
     fi
 
-    if [ ! -z "${LIBDRIVE_REPOSITRY}" ]; then
-        REPO=${LIBDRIVE_REPOSITRY}
+    if [ ! -z "${RYOO1_REPOSITRY}" ]; then
+        REPO=${RYOO1_REPOSITRY}
     else
-        REPO="libDrive/libDrive"
+        REPO="Ryoo1/libDrive"
     fi
 
     curl -L -s $(curl -s "https://api.github.com/repos/${REPO}/releases/${VER}" | grep -Po '"browser_download_url": "\K.*?(?=")') | tar xf - -C .
